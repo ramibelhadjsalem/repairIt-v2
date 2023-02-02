@@ -1,0 +1,48 @@
+.best-repairers {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  .btn1{
+    font-size: 20px;
+    font-family: "Popins",sans-serif;
+    width: 230px;
+    height: 50px;
+    color: #FF981C;
+    border: 3px solid #FF981C;
+    border-radius: 15px;
+    margin: auto;
+    text-align: center;
+    line-height: 50px;
+    text-decoration: none;
+    
+    
+  }
+  .info {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    .title {
+      font-family: 'Poppins', sans-serif;
+      font-size: clamp(25px,4vw,60px);
+      text-transform: uppercase;
+      color: #0C438C;
+    }
+
+    .text {
+      font-family: 'Rubik', sans-serif;
+      max-width: 80%;
+      color: #999999;
+      text-align: center;
+    }
+  }
+
+  .list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding:20px 50px ;
+
+  }
+}

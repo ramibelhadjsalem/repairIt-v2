@@ -1,0 +1,32 @@
+<div class="component">
+    <div class="row">
+
+        <div class="col-md-7 col-xs-12">
+            <div class="side-right">
+                <h3 class="title text-uppercase mb-4">méthode de livraison</h3>
+                <form [formGroup]="livraisonForm" (submit)="livraisonForm.valid && submitlivraisonForm()">
+                    <div class="form-row">
+                        <div class="col-12">
+                            <input formControlName="methodeLivraison" type="radio" name="methodeLivraison" id="radio1"
+                                value="parpost">
+                            <label for="radio1" class="form-control form-control-lg">Par post</label>
+                        </div>
+                        <div class="col-12">
+                            <input formControlName="methodeLivraison" type="radio" name="methodeLivraison" id="radio2"
+                                value="adomocile">
+                            <label for="radio2" class="form-control form-control-lg">A domicile</label>
+                        </div>
+
+                        <div class="col-12">
+                            <button type="submit" class="btn btn-primary btn-lg btn-block my-4">FINI</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="col-5">
+            <div class="side-left"></div>
+        </div>
+    </div>
+
+</div>

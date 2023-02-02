@@ -1,0 +1,67 @@
+<div class="container-fluid w-100">
+    <div class="row">
+        <div class="col-lg-3 d-none d-lg-block left-side ">
+            <div class="title">
+                <a routerLink="/" class="mx-2"><i class="bi bi-arrow-left"></i> </a>
+                Réparation
+            </div>
+            <div class="menu">
+                <ul>
+                    <li class="tab-info position-relative">
+                        <a routerLink="/reparation" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}"> 
+                            <div class="icon">
+                                <i class="bi bi-check-lg"></i>
+                                <div class="bi bi-uncheked"></div>
+                            </div>
+                            <div class="tab-title">Device details</div>
+                            <div class="tab-description">Stp choisir le tupe de votre appraille</div>
+                        </a>
+                    </li>
+                    <li class="tab-info position-relative">
+                        <a routerLink="/reparation/discription" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+                            <div class="icon">
+                                <i class="bi bi-check-lg d-none"></i>
+                                <div class="bi bi-uncheked"></div>
+                            </div>
+                            <div class="tab-title">Décrire votre panne</div>
+                            <div class="tab-description">decriver le panne de votre apparaiel</div>
+                        </a>
+                    </li>
+                    <li class="tab-info position-relative">
+                        <a routerLink="/reparation/address" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+                            <div class="icon">
+                                <i class="bi bi-check-lg d-none"></i>
+                                <div class="bi bi-uncheked"></div>
+                            </div>
+                            <div class="tab-title">Votre addresse</div>
+                            <div class="tab-description">choisir votre addres actuelle</div>
+                        </a>
+                    </li>
+                    <li class="tab-info position-relative">
+                        <a routerLink="/reparation/livraison" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+                            <div class="icon">
+                                <i class="bi bi-check-lg d-none"></i>
+                                <div class="bi bi-uncheked"></div>
+                            </div>
+                            <div class="tab-title">Livraison details</div>
+                            <div class="tab-description">Stp choisir le type livraison</div>
+                        </a>
+                    </li>
+                    
+                </ul>
+
+            </div>
+            <div class="footer">
+                <a class="float-right">mail@gmail.com</a>
+            </div>
+        </div>
+        <div class="col-12 col-lg right-side p-0">
+            <app-menu-md></app-menu-md>
+            <main role="main" class="container-fluid px-0">
+                <router-outlet></router-outlet>
+            </main>
+            <app-indecator></app-indecator>
+        </div>
+    </div>
+
+</div>

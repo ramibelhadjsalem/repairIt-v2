@@ -1,0 +1,112 @@
+<ngb-carousel #carouselInfo
+              [showNavigationArrows]=false
+              [showNavigationIndicators]=false
+              class="carousel-step">
+  <ng-template ngbSlide>
+    <div class="picsum-img-wrapper ">
+      <img class="img-fluid" src="../../../../assets/images/img1.png" alt="">
+    </div>
+    <div class="carousel-caption row">
+      <div class="col-8 p-2">
+        <div class="step-info">
+          <div class="title">
+            <h3>Step 1</h3>
+            <p>Appareil Endommagé</p>
+          </div>
+          <div class="description">
+            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
+              labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et</p>
+          </div>
+          <div class="button">
+            <button class="btn btn-link" routerLink="/reparation">
+              <i class="bi bi-arrow-right"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="action">
+          <button class="btn btn-link" (click)="carouselInfo.prev()">
+            <i class="bi bi-arrow-left"></i>
+          </button>
+          <button class="btn btn-link" (click)="carouselInfo.next()">
+            <i class="bi bi-arrow-right"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </ng-template>
+
+  <ng-template ngbSlide>
+    <div class="picsum-img-wrapper">
+      <img class="img-fluid" src="../../../../assets/images/img1.png" alt="">
+    </div>
+    <div class="carousel-caption row">
+      <div class="col-8">
+        <div class="step-info">
+          <div class="title">
+            <h3>Step 2</h3>
+            <p>Appareil Endommagé</p>
+          </div>
+          <div class="description">
+            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
+              labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et</p>
+          </div>
+          <div class="button">
+            <button class="btn btn-link" routerLink="/reparation">
+              <i class="bi bi-arrow-right"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="action">
+          <button class="btn btn-link" (click)="carouselInfo.prev()">
+            <i class="bi bi-arrow-left"></i>
+          </button>
+          <button class="btn btn-link" (click)="carouselInfo.next()">
+            <i class="bi bi-arrow-right"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </ng-template>
+
+  <ng-template ngbSlide>
+    <div class="picsum-img-wrapper">
+      <img class="img-fluid" src="../../../../assets/images/img1.png" alt="">
+    </div>
+    <div class="carousel-caption row">
+      <div class="col-8">
+        <div class="step-info">
+          <div class="title">
+            <h3>Step 3</h3>
+            <p>Appareil Endommagé</p>
+          </div>
+          <div class="description">
+            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
+              labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et</p>
+          </div>
+          <div class="button">
+            <button class="btn btn-link" routerLink="/reparation">
+              <i class="bi bi-arrow-right"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="action">
+          <button class="btn btn-link" (click)="carouselInfo.prev()">
+            <i class="bi bi-arrow-left"></i>
+          </button>
+          <button class="btn btn-link" (click)="carouselInfo.next()">
+            <i class="bi bi-arrow-right"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </ng-template>
+</ngb-carousel>

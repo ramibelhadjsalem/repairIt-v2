@@ -1,0 +1,32 @@
+<div *ngIf="Model" class="card" style="width: 18rem;" (click)="navigateToProfile(Model.id)">
+    <div class="inner">
+      <img src={{Model.photoUrl}} class="card-img-top" alt="...">
+      <button class="btn btn-chat">
+        <img src="../../../../assets/images/chat_icon.png" alt="" width="40">
+      </button>
+    </div>
+    <div class="card-body">
+      <div class="title">
+        <h3>{{Model.firstName}}  {{Model.lastName}}</h3>
+        <span  *ngIf="Model.verifed"  style="color: green;">
+          <fa-icon [icon]="faCheckCircle"></fa-icon>
+          <p>Réparateur Verifié</p>
+        </span>
+        <span *ngIf="!Model.verifed" style="color: red;">
+          <fa-icon [icon]="faCheckCircle"></fa-icon>
+          <p>Réparateur Non Vérifié </p>
+        </span>
+      </div>
+
+      <div class="content">
+        <div class="info">
+          <p>Rdv 7j/7, 24h/24</p>
+          <p>{{Model.tasks}}</p>
+        </div>
+
+        <div class="star">
+          {{Model.rating | number:'1.1-2'}}<fa-icon [icon]="faStar" size="lg" style="color: #FF981C"></fa-icon>
+        </div>
+      </div>
+    </div>
+</div>

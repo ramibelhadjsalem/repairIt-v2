@@ -1,0 +1,32 @@
+<div class="search">
+    <div class="search-input text-center my-5">
+        <input type="text" [(ngModel)]="searchTerm" placeholder="meilleur réparateur, méthode de livraison...">
+        <button [disabled]="!searchTerm" (click)="search()" >Rechercher</button>
+    </div>
+    <div class="choice mb-3">
+      <div class="tabs ">
+        <p>Méilleur Réparateur</p>
+      </div>
+      <div class="tabs active"> 
+        <p>Méthode de Livraison</p>
+      </div>
+      <div class="tabs">
+        <p>Zone Géographique</p>
+      </div>
+    </div>
+</div>
+<div class="list">
+  <app-cart-reparateur  *ngFor="let user of [].constructor(20)" [Model]="user"></app-cart-reparateur>
+</div> 
+<div *ngIf="pagination" class="pagination my-3 ">
+  <pagination
+      [totalItems]="pagination.totalItems"
+      [itemsPerPage]="pagination.itemsPerPage"
+      [(ngModel)]="pagination.currentPage"
+      (pageChanged)="pageChanged($event)"
+      [maxSize]="maxSize"
+      class="my-pagination" >
+</pagination>
+</div>
+
+

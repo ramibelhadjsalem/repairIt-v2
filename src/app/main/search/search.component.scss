@@ -1,0 +1,109 @@
+.search {
+
+    .search-input {
+        margin: auto;
+        max-width: min(100%, 1000px);
+        height: 70px;
+        padding: 0 10px;
+
+        input[type=text] {
+            height: 100%;
+            width: 60%;
+            // max-width: 500px;
+            // min-width: 300px;
+            padding-left: 20px;
+        }
+
+        button {
+            height: 100%;
+            width: 40%;
+            color: #fff;
+
+            font-family: "Montserrat Regular";
+            background-color: #F29729;
+            border: solid 1px #707070;
+            border-radius: 0 0 1.5em 0;
+
+            opacity: 0.5;
+        }
+
+    }
+
+    .choice {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        max-width: min(650px, 100%);
+        margin: auto;
+        padding: 0 10px;
+        cursor: pointer;
+        user-select: none;
+
+        .tabs {
+            position: relative;
+            text-align: center;
+            opacity: 0.5;
+
+            p {
+                // font-size: 20px;
+                font-size: clamp(14px, 3vw, 20px);
+                font-family: "Montserrat Light";
+                color: #313131;
+
+            }
+
+            &:after {
+                content: " ";
+                background: #F29729;
+                width: clamp(30px, 20vw, 100px);
+                height: 5px;
+                border-radius: 5px;
+                position: absolute;
+                left: 50%;
+                transform: translateX(-50%);
+                z-index: -10000;
+                z-index: 10000;
+            }
+
+            &.active {
+                opacity: 1;
+            }
+        }
+
+
+    }
+}
+
+.list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 10px;
+    max-width: 1300px;
+    margin: auto;
+}
+
+.pagination {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+    .my-pagination::ng-deep {
+        color: #FF981C;
+    }
+
+    .my-pagination::ng-deep .page-link {
+        z-index: 1;
+        color: #313131;
+    }
+
+    .my-pagination::ng-deep .page-item.active .page-link {
+        z-index: 1;
+        color: #FFFFFF;
+        background-color: #FF981C;
+        border-color: #FF981C;
+    }
+}

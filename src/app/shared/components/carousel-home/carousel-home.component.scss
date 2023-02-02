@@ -1,0 +1,65 @@
+.carousel-home {
+  .picsum-img-wrapper {
+    height: 30rem;
+
+    img {
+      width: inherit;
+    }
+  }
+
+  .carousel-caption {
+    position: absolute;
+    // right: 15%;
+    // top: 20px;
+    // left: 15%;
+    width: 100vw;
+    height: inherit;
+    left: 0;
+    top: 0;
+    z-index: 10;
+    padding: 40px 40px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+
+    .title-1 {
+      // font-size: 73px;
+      font-size: clamp(40px,6vw,73px);
+      font-weight: bold;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    .title-2 {
+      font-size: clamp(40px,6vw,73px);
+      font-weight: bold;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    .title-3 {
+      // font-size: 53px;
+      font-size: clamp(20px,3.5vw,53px);
+      font-weight: 100;
+      font-family: 'Rubik', sans-serif;
+    }
+
+    .btn-start {
+      background: #ff981c 0 0 no-repeat padding-box;
+      border-radius: 27px;
+      color: white;
+      width: 80%;
+      max-width: 360px;
+      height: 60px;
+      font-size: 100%;
+      
+    
+    }
+
+    .btn-chat {
+      position: absolute;
+      bottom: 20px;
+      right: 20px;
+    }
+  }
+}

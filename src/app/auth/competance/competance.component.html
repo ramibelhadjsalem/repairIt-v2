@@ -1,0 +1,41 @@
+<div class="component">
+    <div class="row">
+
+        <div class="col-md-7 col-xs-12">
+            <div class="side-right">
+                <h3 class="title text-uppercase mb-4">compétences</h3>
+                <form [formGroup]="competenceForm" (submit)="total>0 && CompetanceFormSubmit()">
+                    <div class="form-row">
+                        <div class="col-12">
+                            <input type="checkbox" formControlName="PC" name="checkboxInput" id="checkbox1" value="PC"
+                                (change)="changetottal($event)">
+                            <label for="checkbox1" class="form-control form-control-lg">PC</label>
+                        </div>
+                        <div class="col-12">
+                            <input type="checkbox" formControlName="MAC" name="checkboxInput" name="checkboxInput"
+                                id="checkbox2" value="MAC" (change)="changetottal($event)">
+                            <label for="checkbox2" class="form-control form-control-lg">MAC</label>
+                        </div>
+                        <div class="col-12">
+                            <input type="checkbox" formControlName="ANDROID" name="checkboxInput" name="checkboxInput"
+                                id="ANDROID" value="ANDROID" (change)="changetottal($event)">
+                            <label for="ANDROID" class="form-control form-control-lg">ANDROID</label>
+                        </div>
+                        <div class="col-12">
+                            <button class="btnplus"><img src="../../../assets/images/logo-plus.png" alt="plus"></button>
+                        </div>
+
+                        <div class="col-12">
+                            <button type="submit" [disabled]="total==0"
+                                class="btn btn-primary btn-lg btn-block my-4 text-uppercase">Suivant</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="col-5">
+            <div class="side-left"></div>
+        </div>
+    </div>
+
+</div>

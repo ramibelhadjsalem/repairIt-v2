@@ -1,0 +1,56 @@
+<div class="component">
+    <div class="row">
+      <div class="col-5 ">
+        <div class="side-left">
+          <button class="btn1 text-uppercase " [routerLink]="'/register'">s'inscrire</button>
+        </div>
+      </div>
+  
+      <div class="col-md-7 col-xs-12">
+        <div class="side-right">
+          <h3 class="title">SE CONNECTER</h3>
+          <form [formGroup]="loginForm" (ngSubmit)="loginForm.valid && login() ">
+            <div class="form-row">
+              <div class="col-12">
+                <input type="text" formControlName="email"class="form-control form-control-lg" placeholder="E-mail">
+                <div *ngIf="emailinvalid==true" class="invalid text-danger">
+                    Email is invalid
+                </div>
+              </div>
+              <div class="col-12">
+                <input type="password" formControlName="password" class="form-control form-control-lg" placeholder="Password">
+                <div *ngIf="passwordIncorrect==true" class="invalid text-danger">
+                  Password is inccorect
+                </div>
+              </div>
+              <div class="col-12">
+                <button [disabled]="!loginForm.valid" type="submit" class="btn btn-primary btn-lg btn-block">CONNECTER</button>
+              </div>
+            </div>
+         
+          </form>
+  
+          <div class="separator">
+            <span>OU</span>
+          </div>
+  
+          <div class="social btn-toolbar">
+    
+            <button type="button" class="btn btn-labeled btn-light" (click)="loginWithFacebook()">
+              <span class="btn-label">
+                <fa-icon [icon]="faGoogleD"></fa-icon>
+              </span>
+              S'inscrire avec Google
+            </button> 
+            <button type="button" class="btn btn-labeled btn-light">
+              <span class="btn-label">
+                <fa-icon [icon]="faFacebookF"></fa-icon>
+              </span>
+              S'inscrire avec Facebook
+            </button> 
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  

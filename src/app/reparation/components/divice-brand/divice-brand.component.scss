@@ -1,0 +1,26 @@
+.brand-card {
+    margin: 10px 0;
+    .icon {
+        min-height: 80px;
+        border-radius: 20px;
+        text-align: center !important;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        svg {
+            height: 50px !important;
+            width: 50px;
+        }
+       
+    }
+    input[type=radio]:checked+label {
+        background-color:#e7e6e6 ;
+        
+        color: #FF981C;
+    }
+    .title{
+        font-size: 25px;
+        font-weight: 500;
+    }
+}

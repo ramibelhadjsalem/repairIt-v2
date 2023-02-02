@@ -1,0 +1,51 @@
+.service-inclue {
+  padding: 100px 50px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: space-around;
+
+  .col {
+    text-align: center;
+
+    &.mobile {
+      img {
+        width: 60px;
+      }
+    }
+
+    &.ipad {
+      img {
+        width: 100px;
+      }
+    }
+
+    &.laptop {
+      img {
+        width: 135px;
+      }
+
+      h3 {
+        color: #ff981c;
+      }
+    }
+
+    &.desktop {
+      img {
+        width: 100px;
+      }
+    }
+
+    &.smart-watch {
+      img {
+        width: 100px;
+      }
+    }
+
+    h3 {
+      font-size: 24px;
+      color: black;
+      margin-top: 15px;
+    }
+  }
+}

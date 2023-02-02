@@ -1,0 +1,125 @@
+.component {
+    overflow: hidden;
+  
+    .row {
+      height: 100vh;
+    }
+  
+  
+  
+    .side-left {
+      height: 100%;
+      padding: 20px 10%;
+      display: flex;
+      color: white;
+      flex-direction: column;
+      justify-content: center;
+  
+      .title {
+        color: #0C438C;
+      }
+  
+      .form-row {
+        .form-control {
+          margin: 10px 0;
+        }
+  
+        .btn {
+          margin: 10px 0;
+          background: #FF981C 0 0 no-repeat padding-box;
+          border: #FF981C;
+        }
+      }
+  
+      .separator {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        align-items: center;
+        margin: 20px 0;
+  
+        span {
+          color: #5a6574;
+          display: flex;
+          align-items: center;
+          width: 100%;
+  
+          &:before {
+            content: "";
+            border: 1px solid #B8B7B4;
+            width: 100%;
+            margin-right: 35px;
+          }
+  
+          &:after {
+            content: "";
+            border: 1px solid #B8B7B4;
+            width: 100%;
+            margin-left: 35px;
+          }
+        }
+      }
+    }
+  
+    .side-right {
+      height: 100%;
+      background-image:
+        url('../../../assets/images/Rectangle\ 1244.png'),
+        url("../../../assets/images/bg-register.png");
+  
+      background-size: cover;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 16px;
+      color: white;
+  
+  
+    }
+  
+    .btn {
+      margin-bottom: 10px;
+      width: 100%;
+      border: 1px solid #B3B3B3;
+  
+      .btn-labeled {
+        padding-top: 0;
+        padding-bottom: 0;
+  
+        .btn-label {
+          position: relative;
+          left: -12px;
+          display: inline-block;
+          padding: 6px 12px;
+          background: rgba(0, 0, 0, 0.15);
+          border-radius: 3px 0 0 3px;
+        }
+      }
+    }
+  }
+  
+  .btn1 {
+    position: relative;
+    width: 100%;
+    top: 35%;
+    height: 75px;
+    background: none;
+    border: none;
+    border-radius: 5px;
+    background-color: #ffffff;
+    opacity: 0.5;
+    color: #000000c9;
+    letter-spacing: 2px;
+  
+  }
+  
+  
+  @media screen and (max-width: 760px) {
+    .col-5 {
+      display: none;
+    }
+  
+  }

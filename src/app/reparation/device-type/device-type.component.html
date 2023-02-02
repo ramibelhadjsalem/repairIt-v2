@@ -1,0 +1,13 @@
+<div class="container-fluid d-flex flex-column justify-content-evenly align-items-center p-2 p-lg-5">
+    <div class="title justify-content-center text-center px-3">
+        <h1 class="text-uppercase ">SÉLECTIONNEZ LA MARQUE DE VOTRE device </h1>
+    </div>
+    <div class="container">
+        <div class="row row-cols-2 row-cols-md-3 justify-content-between" >
+            <app-divice-brand *ngFor="let brand of brands" [brand]="brand" ></app-divice-brand>
+        </div>
+    </div>
+    <div class="btn btn-next">
+        <button [routerLink]="['./discription']">Suivant</button>
+    </div>
+</div>

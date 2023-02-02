@@ -1,0 +1,7 @@
+<div class="brand-card col text-center p-2">
+    <input type="radio" name="brand" [id]="brand.name" [value]="brand.name" class="d-none">
+    <label [innerHTML]="icon" class="icon" [for]="brand.name">
+   
+    </label>
+    <p  *ngIf="showTitle" class="title text-capitalize">{{brand.name}}</p>
+</div>

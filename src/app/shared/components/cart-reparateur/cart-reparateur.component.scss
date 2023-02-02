@@ -1,0 +1,90 @@
+.card {
+    margin: 15px;
+    cursor: pointer;
+    box-shadow: rgb(0 0 0 / 10%) 0 5px 50px;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+
+    .inner {
+      overflow: hidden;
+      position: relative;
+
+      img {
+        transition: all 1.5s ease;
+
+        &:hover {
+          transform: scale(1.1);
+        }
+      }
+
+      .btn {
+        position: absolute;
+        right: 0;
+        top: 0;
+      }
+    }
+
+    .card-body {
+      border: 1px solid #707070;
+      border-top-width: 0;
+
+      .title {
+        text-align: center;
+
+        h3 {
+          color: #0c438c;
+          font-size: 1.7rem;
+          font-family: 'Poppins', sans-serif;
+          text-transform: uppercase;
+          margin: 0;
+          max-height: 30px;
+          overflow-y: hidden;
+        }
+
+        span {
+          color: #32BE08;
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          justify-content: center;
+
+          p {
+            margin-bottom: 4px;
+            margin-left: 5px;
+            text-transform: capitalize;
+          }
+        }
+      }
+
+      .content {
+        text-transform: capitalize;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 10px;
+
+        .info {
+          display: flex;
+          align-items: flex-start;
+          flex-direction: column;
+         
+
+          p {
+            margin: 0;
+            max-height: 30px;
+            overflow: hidden;
+          }
+        }
+
+        .star {
+          .ng-fa-icon {
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }

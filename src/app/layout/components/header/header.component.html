@@ -1,0 +1,31 @@
+<header>
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-light mb-3">
+    <a class="navbar-brand logo" [routerLink]="'.'">
+      <img src="../../../../assets/images/logo.png" alt="" width="60">
+    </a>
+    <button class="navbar-toggler" type="button" (click)="isMenuCollapsed = !isMenuCollapsed">
+      &#9776;
+    </button>
+
+    <div [ngbCollapse]="isMenuCollapsed"  class="collapse navbar-collapse justify-content-md-around">
+      <app-menu></app-menu>
+
+      <div class="navbar-nav navbar-nav-profil">
+        <div class="nav-item dropdown">
+          <a [routerLink]="'/profile'">
+            <img src="../../../../assets/images/profile-sm.png" alt="" width="15">
+          </a>
+          <div *ngIf="true" class="dropdown-content">
+            <a [routerLink]="'/register'">S'inscrire</a>
+            <a [routerLink]="'/login'">Se Connecter</a>
+          </div>
+        </div>
+        <div class="nav-item">
+          <a [routerLink]="'/search'">
+            <img src="../../../../assets/images/search-sm.png" alt="" width="15">
+          </a>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>

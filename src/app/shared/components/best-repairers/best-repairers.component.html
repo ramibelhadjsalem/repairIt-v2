@@ -1,0 +1,22 @@
+<div class="best-repairers">
+
+  <div class="info px-2">
+    <h3 class="title text-nowrap ">
+      NOS Meilleurs réparateurs
+    </h3>
+
+    <p class="text px-2">
+      Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et
+      dolore magna aliquyam erat, sed diam voluptua. At vero eos et
+    </p>
+  </div>
+
+
+
+  <div class="list">
+    <app-cart-reparateur *ngFor="let item of [].constructor(4)" [Model]="item"></app-cart-reparateur>
+  </div>
+  <div class="text-uppercase d-flex">
+    <a [routerLink]="['/services/all']" routerLinkActive="router-link-active" class="btn1">Voir tous</a>
+  </div>
+</div>

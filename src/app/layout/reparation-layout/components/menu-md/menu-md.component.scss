@@ -1,0 +1,31 @@
+.container-fluid {
+  
+
+    .title {
+        font-size: 25px;
+        background-color: #DC851C;
+        color: #fff;
+        padding: 10px;
+        font-weight: 600;
+        line-height: 25px;
+        margin-bottom: 20px;
+
+        .bi {
+
+            font-size: 30px;
+        }
+
+        a {
+            text-decoration: none;
+            color: #fff;
+            cursor: pointer;
+            padding: 2px 5px;
+            border-radius: 4px;
+           
+
+            &:hover {
+                background: #DC851C 0 0 no-repeat padding-box;
+            }
+        }
+    }
+}

@@ -1,0 +1,69 @@
+.pannedescription{
+    
+    .col-md-7{ 
+        max-width: 1000px;
+        h4{
+            font-size: clamp(30px,4vw,60px);
+            color: #0C438C;
+        }
+        p{
+            font-style: "Rubik";
+            font-size: 20px; 
+            text-decoration: underline;
+           
+            
+        }
+        .textarea{
+            input{
+            
+                width: 100%;
+                height: 200px;
+                padding: 20px 30px;
+                border-radius: 15px;
+                border: 2px solid #9B9B9B;
+                
+            }
+
+        }
+        .btns{
+            height: 50px;
+            input[type=checkBox]{
+                display: none;
+            }
+            label{
+                text-align: center;
+              
+                border: 2px solid #9B9B9B;
+                color: #9B9B9B;
+                width: 100%;
+                height: 100%;
+                text-transform: uppercase;
+                border-radius: 20px;
+                display:flex;
+                align-items: center;
+                justify-content: center;
+            }
+            input[type=checkBox]:checked +label{
+                border: 3px solid #FF981C  ;
+                background-color: #FF981C;
+                color: #fff;
+            }
+        }
+    }
+   
+}
+.btn-next {
+    width: 100%;
+    button {
+        all: unset;
+        width: 100%;
+        max-width: 250px;
+        font-size: 20px;
+        line-height: 25px;
+        color: #fff;
+        background-color: #FF981C;
+        border-radius: 10px;
+        padding:10px 20px ;
+
+    }
+}
