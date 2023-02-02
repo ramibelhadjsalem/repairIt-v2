@@ -115,6 +115,10 @@
                             }
 
                         }
+                        &.disabled {
+                            pointer-events: none;
+                            cursor: not-allowed; 
+                        }
 
                         // &::before {
                         //     content: '\25CF';

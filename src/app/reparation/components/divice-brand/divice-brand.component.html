@@ -1,8 +1,9 @@
-<div class="brand-card col  px-2  "  >
-    <input type="radio" name="brand" [id]="brand.name" [value]="brand.name" class="d-none" >
+<div class="brand-card col  px-2"  >
+    <input [formControl]="formControl" type="radio" name="brand" [id]="brand.name" [value]="brand.name" class="d-none" for>
     <label  class="icon py-2" [for]="brand.name">
         <div [innerHTML]="icon"></div>
         <p  *ngIf="showTitle" class="title text-capitalize mb-0">{{brand.name}}</p>
     </label>
    
 </div>
+

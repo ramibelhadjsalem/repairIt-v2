@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { FormGroup } from '@angular/forms';
+import { RepartionService } from 'src/app/services/services/repartion.service';
 
 @Component({
   selector: 'app-reparation-layout',
@@ -6,10 +8,16 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./reparation-layout.component.scss']
 })
 export class ReparationLayoutComponent implements OnInit {
-
-  constructor() { }
+  form !: FormGroup
+  
+  constructor(private formService : RepartionService) { }
 
   ngOnInit(): void {
+     this.form=this.formService.form
+    // this.typeForm = this.form.get('type') as FormGroup
+  }
+  categorieDisabled():boolean{
+    return  this.form.get('categorie')!.invalid 
   }
 
 }

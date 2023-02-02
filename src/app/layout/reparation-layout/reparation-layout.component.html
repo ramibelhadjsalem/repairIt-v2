@@ -8,9 +8,9 @@
             <div class="menu">
                 <ul>
                     <li class="tab-info position-relative">
-                        <a routerLink="/reparation" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}"> 
-                            <div class="icon">
-                                <i class="bi bi-check-lg"></i>
+                        <a routerLink="/reparation" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}"  [class.disabled]="categorieDisabled()"> 
+                            <div class="icon" >
+                                <i class="bi bi-check-lg" [ngClass]="!form.get('categorie')?.valid ? 'd-none':''"></i>
                                 <div class="bi bi-uncheked"></div>
                             </div>
                             <div class="tab-title">Device details</div>
@@ -20,7 +20,7 @@
                     <li class="tab-info position-relative">
                         <a routerLink="/reparation/discription" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
                             <div class="icon">
-                                <i class="bi bi-check-lg d-none"></i>
+                                <i class="bi bi-check-lg" [ngClass]="true ? 'd-none':''"></i>
                                 <div class="bi bi-uncheked"></div>
                             </div>
                             <div class="tab-title">Décrire votre panne</div>
@@ -30,7 +30,7 @@
                     <li class="tab-info position-relative">
                         <a routerLink="/reparation/address" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
                             <div class="icon">
-                                <i class="bi bi-check-lg d-none"></i>
+                                <i class="bi bi-check-lg" [ngClass]="true ? 'd-none':''"></i>
                                 <div class="bi bi-uncheked"></div>
                             </div>
                             <div class="tab-title">Votre addresse</div>
@@ -40,7 +40,7 @@
                     <li class="tab-info position-relative">
                         <a routerLink="/reparation/livraison" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
                             <div class="icon">
-                                <i class="bi bi-check-lg d-none"></i>
+                                <i class="bi bi-check-lg" [ngClass]="true ? 'd-none':''"></i>
                                 <div class="bi bi-uncheked"></div>
                             </div>
                             <div class="tab-title">Livraison details</div>

@@ -8,6 +8,7 @@ import { DiviceBrandComponent } from './components/divice-brand/divice-brand.com
 import { LivraisonComponent } from './livraison/livraison.component';
 import { AddressComponent } from './address/address.component';
 import { DiscriptionComponent } from './discription/discription.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -21,7 +22,8 @@ import { DiscriptionComponent } from './discription/discription.component';
   ],
   imports: [
     CommonModule,
-    ReparationRoutingModule
+    ReparationRoutingModule,
+    ReactiveFormsModule
   ]
 })
 export class ReparationModule { }

@@ -13,6 +13,7 @@ import { IndecatorComponent } from './reparation-layout/components/indecator/ind
 import { SharedModule } from '../shared/shared.module';
 import { RouterModule } from '@angular/router';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { FormsModule } from '@angular/forms';
 
 
 
@@ -33,7 +34,8 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     CommonModule,
     SharedModule,
     RouterModule,
-    NgbModule
+    NgbModule,
+    FormsModule
   ],
   exports: [
     HeaderComponent,
