@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { LinkGuard } from '../services/guards/link.guard';
 import { AddressComponent } from './address/address.component';
 import { DeviceCategorieComponent } from './device-categorie/device-categorie.component';
 import { DeviceTypeComponent } from './device-type/device-type.component';
@@ -19,7 +20,9 @@ const routes: Routes = [
     path: '', children: [
       {
         path: "type",
-        component: DeviceTypeComponent
+        component: DeviceTypeComponent,
+        canActivate:[LinkGuard],
+        data: {redirectUrl:"reparation",form: "categorie"}
       }
     ]
   },
@@ -27,7 +30,9 @@ const routes: Routes = [
     path: '', children: [
       {
         path: "livraison",
-        component: LivraisonComponent
+        component: LivraisonComponent,
+        canActivate:[LinkGuard],
+        data: {redirectUrl:"reparation/address",form: "address"}
       }
     ]
   },
@@ -35,7 +40,9 @@ const routes: Routes = [
     path: '', children: [
       {
         path: "discription",
-        component: DiscriptionComponent
+        component: DiscriptionComponent,
+        canActivate:[LinkGuard],
+        data: {redirectUrl:"reparation",form: "categorie"}
       }
     ]
   },
@@ -43,7 +50,9 @@ const routes: Routes = [
     path: '', children: [
       {
         path: "address",
-        component: AddressComponent
+        component: AddressComponent,
+        canActivate:[LinkGuard],
+        data: {redirectUrl:"reparation/discription",form: "discription"}
       }
     ]
   }
