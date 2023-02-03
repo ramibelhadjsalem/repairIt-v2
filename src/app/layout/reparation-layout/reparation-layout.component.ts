@@ -16,8 +16,10 @@ export class ReparationLayoutComponent implements OnInit {
      this.form=this.formService.form
     // this.typeForm = this.form.get('type') as FormGroup
   }
-  categorieDisabled():boolean{
+  discriptionDisabled():boolean{
     return  this.form.get('categorie')!.invalid 
   }
-
+  addressDisabled(){
+    return  this.form.get('discription')!.invalid
+  }
 }

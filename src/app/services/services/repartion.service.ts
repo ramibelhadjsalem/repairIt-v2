@@ -9,7 +9,7 @@ export class RepartionService {
   constructor(private fb : FormBuilder) { 
     this.form = this.fb.group({
       categorie:['',Validators.required],
-      
+      discription:['',[Validators.required,Validators.minLength(30)]],
     });
   }
 }

@@ -23,7 +23,9 @@ import { ReactiveFormsModule } from '@angular/forms';
   imports: [
     CommonModule,
     ReparationRoutingModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    
+    
   ]
 })
 export class ReparationModule { }

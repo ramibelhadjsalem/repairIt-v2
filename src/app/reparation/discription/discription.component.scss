@@ -1,54 +1,94 @@
 .pannedescription{
-    .col-md-7{ 
-        max-width: 1000px;
-        h4{
+
+    .discription-header{
+        .title{
             font-size: clamp(30px,4vw,60px);
             color: #0C438C;
+            letter-spacing: 10px;
         }
         p{
             font-style: "Rubik";
             font-size: 20px; 
-            text-decoration: underline;
-           
-            
+            color: #999;
         }
-        .textarea{
-            input{
-            
-                width: 100%;
-                height: 200px;
-                padding: 20px 30px;
-                border-radius: 15px;
-                border: 2px solid #9B9B9B;
-                
-            }
 
-        }
-        .btns{
-            height: 50px;
-            input[type=checkBox]{
-                display: none;
-            }
-            label{
-                text-align: center;
-              
-                border: 2px solid #9B9B9B;
-                color: #9B9B9B;
-                width: 100%;
-                height: 100%;
-                text-transform: uppercase;
-                border-radius: 20px;
-                display:flex;
-                align-items: center;
-                justify-content: center;
-            }
-            input[type=checkBox]:checked +label{
-                border: 3px solid #FF981C  ;
-                background-color: #FF981C;
-                color: #fff;
-            }
+    }
+    form{
+       
+        .disription{
+           outline: none;
+           width: 400px;
+           height: 60px;
+           border: 2px solid #999 ;
+           border-radius: 5px;
+           transition: height 1s;
+           overflow-y: hidden;
+           resize:none;
+           padding: 0 10px;
+           line-height: 25px;
+           &:focus{
+            height: 200px;
+            line-height: 20px;
+            max-height: 200px;
+            padding: 20px 10px;
+           }
         }
     }
+
+
+
+
+
+    // .col-md-7{ 
+    //     max-width: 1000px;
+    //     h4{
+    //         font-size: clamp(30px,4vw,60px);
+    //         color: #0C438C;
+    //     }
+    //     p{
+    //         font-style: "Rubik";
+    //         font-size: 20px; 
+    //         text-decoration: underline;
+           
+            
+    //     }
+    //     .textarea{
+    //         input{
+            
+    //             width: 100%;
+    //             height: 200px;
+    //             padding: 20px 30px;
+    //             border-radius: 15px;
+    //             border: 2px solid #9B9B9B;
+                
+    //         }
+
+    //     }
+    //     .btns{
+    //         height: 50px;
+    //         input[type=checkBox]{
+    //             display: none;
+    //         }
+    //         label{
+    //             text-align: center;
+              
+    //             border: 2px solid #9B9B9B;
+    //             color: #9B9B9B;
+    //             width: 100%;
+    //             height: 100%;
+    //             text-transform: uppercase;
+    //             border-radius: 20px;
+    //             display:flex;
+    //             align-items: center;
+    //             justify-content: center;
+    //         }
+    //         input[type=checkBox]:checked +label{
+    //             border: 3px solid #FF981C  ;
+    //             background-color: #FF981C;
+    //             color: #fff;
+    //         }
+    //     }
+    // }
    
 }
 .btn-navigation {
@@ -79,6 +119,6 @@
 @media screen and (min-width: 992px) {
     .btn-navigation {
         width: calc( 100vw * 0.75 ) !important;
-        margin-left: -15px;
+        // margin-left: -15px;
     }
 }
