@@ -9,17 +9,20 @@ import { RepartionService } from 'src/app/services/services/repartion.service';
 })
 export class ReparationLayoutComponent implements OnInit {
   form !: FormGroup
-  
+  address !:FormGroup
   constructor(private formService : RepartionService) { }
 
   ngOnInit(): void {
-     this.form=this.formService.form
-    // this.typeForm = this.form.get('type') as FormGroup
+    this.form=this.formService.form
+    this.address = this.form.get('address') as FormGroup
   }
   discriptionDisabled():boolean{
     return  this.form.get('categorie')!.invalid 
   }
   addressDisabled(){
     return  this.form.get('discription')!.invalid
+  }
+  livraisonDisabled(){
+    return this.address.invalid
   }
 }

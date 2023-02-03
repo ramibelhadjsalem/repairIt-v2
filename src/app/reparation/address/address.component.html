@@ -1,41 +1,24 @@
 <div class="container-fluid adresse my-5 ">
-    <div class="row justify-content-center py-sm-5 px-sm-4 p-lg-5">
-        <div class="col-md-4 col-lg-4 d-flex align-content-center img">
-            <!-- <img class="img-fluid" src="../../../assets/images/map.png" alt=""> -->
-            >
-        </div>
-        <div class="col-md-7 col-lg-6 my-sm-4 ">
-            <h4 class="text-uppercase d-flex justify-content-end">votre addresse</h4>
-            <div class=" form-group d-flex justify-content-center">
-                <select  >
-                    <option value="" selected disabled hidden>Tunisia</option>
-                    <option value="1">One</option>
-                    <option value="2">Two</option>
-                    <option value="3">Three</option>
-                    <option value="4">Four</option>
-                </select>
-            </div>
-            <div class=" form-group  d-flex justify-content-center">
-                <select  >
-                    <option value="" selected disabled hidden>Sousse</option>
-                    <option value="1">One</option>
-                    <option value="2">Two</option>
-                    <option value="3">Three</option>
-                    <option value="4">Four</option>
-                </select>
-            </div>
-            <div class=" form-group  d-flex justify-content-center">
-                <select  >
-                    <option value="" selected disabled hidden>Rue</option>
-                    <option value="1">One</option>
-                    <option value="2">Two</option>
-                    <option value="3">Three</option>
-                    <option value="4">Four</option>
-                </select>
-            </div>
-        </div>
+
+    <div class="title mb-5">
+        <h4 class="text-uppercase"> choisir votre addresse</h4>
+        <p>Double click pour coucher votre addresse</p>
     </div>
+    <div class="container-map">
+        <google-map 
+            width="100%"
+            height="400px" 
+            [center]="center" 
+            [zoom]="zoom" 
+            (mapClick)="putMarker($event)"
+           >
+            <map-marker *ngIf="myposition"
+              [position]="myposition"
+              [options]="markerOptions"></map-marker>
+        </google-map>
+    </div>
+
 </div>
 <div class="btn-navigation btn-next">
-    <button [routerLink]="['../livraison']">Suivant</button>
+    <button [routerLink]="['../livraison']" [disabled]="form.invalid" >Suivant</button>
 </div>

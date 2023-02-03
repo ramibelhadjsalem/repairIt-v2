@@ -6,10 +6,16 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 })
 export class RepartionService {
   form: FormGroup;
-  constructor(private fb : FormBuilder) { 
+  constructor(private fb: FormBuilder) {
     this.form = this.fb.group({
-      categorie:['',Validators.required],
-      discription:['',[Validators.required,Validators.minLength(30)]],
+      categorie: ['', Validators.required],
+
+      discription: ['', [Validators.required, Validators.minLength(30)]],
+
+      address: this.fb.group({
+        lat: [-100,[ Validators.min(-90),Validators.max(90)]],
+        lng: [-100, [ Validators.min(-90),Validators.max(90)]]
+      })
     });
   }
 }

@@ -9,6 +9,7 @@ import { LivraisonComponent } from './livraison/livraison.component';
 import { AddressComponent } from './address/address.component';
 import { DiscriptionComponent } from './discription/discription.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { GoogleMapsModule } from '@angular/google-maps';
 
 
 @NgModule({
@@ -24,6 +25,7 @@ import { ReactiveFormsModule } from '@angular/forms';
     CommonModule,
     ReparationRoutingModule,
     ReactiveFormsModule,
+    GoogleMapsModule
     
     
   ]
