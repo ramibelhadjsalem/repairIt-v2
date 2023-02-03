@@ -39,7 +39,7 @@
                     </li>
                     <li class="tab-info position-relative">
                         <a routerLink="/reparation/livraison" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" [class.disabled]="livraisonDisabled()">
-                            <div class="icon "[ngClass]="false ? 'valid':''">
+                            <div class="icon "[ngClass]="form.get('livraison')?.valid ? 'valid':''">
                                 <i class="bi bi-check-lg" ></i>
                                 <div class="bi bi-uncheked"></div>
                             </div>

@@ -15,7 +15,9 @@ export class RepartionService {
       address: this.fb.group({
         lat: [-100,[ Validators.min(-90),Validators.max(90)]],
         lng: [-100, [ Validators.min(-90),Validators.max(90)]]
-      })
+      }),
+
+      livraison: ['', Validators.required],
     });
   }
 }

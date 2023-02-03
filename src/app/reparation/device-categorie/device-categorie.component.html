@@ -5,7 +5,7 @@
     <form class="container" [formGroup]="typeForm">
         <div class="row row-cols-2 row-cols-md-4" >
             <div class="brand-card col  px-2" *ngFor="let brand of categories"  >
-                <input formControlName="categorie"  type="radio" name="categorie" [id]="brand.name" [value]="brand.name" class="d-none" >
+                <input formControlName="categorie"  type="radio" name="categorie" [id]="brand.name" [value]="brand.name" class="d-none" (click)="handleClicl($event)">
                 <label  class="icon py-2" [for]="brand.name">
                     <div [innerHTML]="genrateIcon(brand.icon)"></div>
                     <p  *ngIf="true" class="title2 text-capitalize mb-0">{{brand.name}}</p>

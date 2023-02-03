@@ -26,8 +26,9 @@ export class DeviceCategorieComponent implements OnInit {
     this.typeForm = this.formService.form
   }
 
-  handleClicl() {
-    console.log(this.formService.form);
+  handleClicl($event:any) {
+   
 
   }
+  
 }

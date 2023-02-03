@@ -29,6 +29,8 @@
                 }
                
             }
+            }
+            
             input[type=radio]:checked+label {
                 background-color:#e7e6e6 ;
                 color: #FF981C;
@@ -68,8 +70,8 @@
                 color: #FF981C;
             }
         }
-    }
 }
+
 
 .btn-navigation {
     position: fixed;

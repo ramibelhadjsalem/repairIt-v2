@@ -1,4 +1,21 @@
 .livraison{
+    .title-header{
+        .title{
+            font-size: clamp(30px,4vw,60px);
+            color: #0C438C;
+          
+        }
+        p{
+            font-style: "Rubik";
+            font-size: 20px; 
+            color: #999;
+        }
+    }
+
+
+
+
+    
     .rowl{
         display: flex ;
         flex-direction: column;
@@ -6,11 +23,16 @@
         align-items:flex-end;
         .row{
             width: 100%;
+
+            .form-group{
+                min-width: 150px;
+                
+            }
             input[type=radio]{
                 display: none;
             }
             label{
-               
+                cursor: pointer;
                 width: 100%;
                 max-width: 300px;
                 height: 40px;
@@ -26,13 +48,6 @@
             }
            
             
-        }  
-        span{
-            font-size: 20px;
-        }
-        i{
-            color: #0C438C;
-
         }  
         p{
             font-size:"Rubik";
@@ -66,7 +81,9 @@
         border-radius: 10px;
         padding: 10px 20px;
         text-align: center;
-
+        &:disabled{
+            opacity: 0.7;
+        }
     }
 }
 @media screen and (min-width: 992px) {
