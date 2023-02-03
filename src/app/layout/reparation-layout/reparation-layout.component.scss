@@ -91,7 +91,6 @@
                             color: #fff;
                             display: flex;
                             align-items: center;
-
                             .bi-uncheked {
                                 width: 7px;
                                 height: 7px;
@@ -99,7 +98,18 @@
                                 background-color: #fff;
                                 color: #fff;
                                 margin: auto;
+                            }
+                            .bi-check-lg{
+                                display: none;
+                            }
 
+                            &.valid{
+                                .bi-uncheked {
+                                    display: none;
+                                }
+                                .bi-check-lg{
+                                    display: block;
+                                }
                             }
                         }
 
