@@ -8,8 +8,9 @@ import { DiviceBrandComponent } from './components/divice-brand/divice-brand.com
 import { LivraisonComponent } from './livraison/livraison.component';
 import { AddressComponent } from './address/address.component';
 import { DiscriptionComponent } from './discription/discription.component';
-import { ReactiveFormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { GoogleMapsModule } from '@angular/google-maps';
+import { AutoComplateAdressComponent } from './components/auto-complate-adress/auto-complate-adress.component';
 
 
 @NgModule({
@@ -19,15 +20,15 @@ import { GoogleMapsModule } from '@angular/google-maps';
     AddressComponent,
     LivraisonComponent,
     DiviceBrandComponent,
-    DeviceCategorieComponent
+    DeviceCategorieComponent,
+    AutoComplateAdressComponent
   ],
   imports: [
     CommonModule,
     ReparationRoutingModule,
     ReactiveFormsModule,
-    GoogleMapsModule
-    
-    
+    GoogleMapsModule,
+    FormsModule
   ]
 })
 export class ReparationModule { }

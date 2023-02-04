@@ -16,7 +16,8 @@ import { SharedModule } from './shared/shared.module';
     AppRoutingModule,
     LayoutModule,
     SharedModule,
-    GoogleMapsModule
+    GoogleMapsModule,
+    
     
   ],
   providers: [],

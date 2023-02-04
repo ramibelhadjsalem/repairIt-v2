@@ -1,9 +1,14 @@
-<div class="container-fluid adresse my-5 ">
+<div class="container-fluid adresse mt-3 ">
 
     <div class="title mb-5">
         <h4 class=""> Choisir votre addresse</h4>
         <p>Double click pour coucher votre addresse</p>
     </div>
+    <div class="text-center pb-3">
+        <app-auto-complate-adress (setAddress)="getAddress($event)" adressType="geocode"></app-auto-complate-adress>
+        <!-- <app-auto-complate-adress></app-auto-complate-adress> -->
+    </div>
+
     <div class="container-map">
         <google-map 
             width="100%"
