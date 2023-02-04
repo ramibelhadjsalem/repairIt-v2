@@ -7,7 +7,7 @@
             </div>
             <div class="menu">
                 <ul>
-                    <li class="tab-info ">
+                    <li class="tab-info">
                         <a routerLink="/reparation" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
                             <div class="icon" [ngClass]="form.get('categorie')?.valid ? 'valid':''">
                                 <i class="bi bi-check-lg"></i>
@@ -19,9 +19,9 @@
                             </div>
                         </a>
                     </li>
-                    <li class="tab-info ">
+                    <li class="tab-info " [class.disabled]="discriptionDisabled()">
                         <a routerLink="/reparation/discription" routerLinkActive="active"
-                            [routerLinkActiveOptions]="{exact: true}" [class.disabled]="discriptionDisabled()">
+                            [routerLinkActiveOptions]="{exact: true}">
                             <div class="icon" [ngClass]="form.get('discription')?.valid ? 'valid':''">
                                 <i class="bi bi-check-lg"></i>
                                 <div class="bi bi-uncheked"></div>
@@ -32,9 +32,9 @@
                             </div>
                         </a>
                     </li>
-                    <li class="tab-info ">
+                    <li class="tab-info " [class.disabled]="addressDisabled()">
                         <a routerLink="/reparation/address" routerLinkActive="active"
-                            [routerLinkActiveOptions]="{exact: true}" [class.disabled]="addressDisabled()">
+                            [routerLinkActiveOptions]="{exact: true}" >
                             <div class="icon" [ngClass]="address.valid ? 'valid':''">
                                 <i class="bi bi-check-lg"></i>
                                 <div class="bi bi-uncheked"></div>
@@ -45,10 +45,10 @@
                             </div>
                         </a>
                     </li>
-                    <li class="tab-info ">
+                    <li class="tab-info " [class.disabled]="livraisonDisabled()">
                         <a routerLink="/reparation/livraison" routerLinkActive="active"
-                            [routerLinkActiveOptions]="{exact: true}" [class.disabled]="livraisonDisabled()">
-                            <div class="icon " [ngClass]="form.get('livraison')?.valid ? 'valid':''">
+                            [routerLinkActiveOptions]="{exact: true}" >
+                            <div class="icon" [ngClass]="form.get('livraison')?.valid ? 'valid':''">
                                 <i class="bi bi-check-lg"></i>
                                 <div class="bi bi-uncheked"></div>
                             </div>

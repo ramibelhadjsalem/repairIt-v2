@@ -51,7 +51,7 @@ const routes: Routes = [
       {
         path: "address",
         component: AddressComponent,
-        canActivate:[LinkGuard],
+        // canActivate:[LinkGuard],
         data: {redirectUrl:"reparation/discription",form: "discription"}
       }
     ]

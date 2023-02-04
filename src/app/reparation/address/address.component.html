@@ -10,7 +10,8 @@
             height="400px" 
             [center]="center" 
             [zoom]="zoom" 
-            (mapClick)="putMarker($event)"
+            (mapDblclick)="putMarker($event)"
+          
            >
            <map-marker *ngIf="myposition"
               [position]="myposition"

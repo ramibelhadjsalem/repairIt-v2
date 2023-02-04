@@ -71,6 +71,11 @@
                         background-color: var(--color-wight);
                         color: var(--color-wight);
                     }
+                    &.disabled {
+                        pointer-events: none;
+                        cursor: not-allowed; 
+                        opacity: 0.5;
+                    }
 
 
                     a {
@@ -129,11 +134,7 @@
                             }
 
                         }
-                        &.disabled {
-                            pointer-events: none;
-                            cursor: not-allowed; 
-                            opacity: 0.5;
-                        }
+                        
                     }
                 }
             }

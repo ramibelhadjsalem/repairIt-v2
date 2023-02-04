@@ -11,8 +11,8 @@ import { RepartionService } from 'src/app/services/services/repartion.service';
 })
 export class AddressComponent implements OnInit{
   isLight:boolean =true
-  center: google.maps.LatLngLiteral = {lat: 24, lng: 12};
-  zoom = 4;
+  center: google.maps.LatLngLiteral = { lat: 47.016574992839494, lng: 2.9913817991325997 };
+  zoom = 5;
   markerOptions: google.maps.MarkerOptions = {draggable: false};
   myposition ?:google.maps.LatLngLiteral
   
@@ -24,10 +24,8 @@ export class AddressComponent implements OnInit{
 
   ngOnInit(): void {
     this.initform()
-
-    setTimeout(()=>{
-      this.navigateTo()
-    },3000)
+    this.getLocation() 
+   
     
   }
   initform(){
@@ -41,8 +39,21 @@ export class AddressComponent implements OnInit{
      
     } 
   }
-  navigateTo(){
-    // this.maps.panTo({lat: 50, lng: 60})
+  getLocation() {
+    if (navigator.geolocation) {
+      navigator.geolocation.getCurrentPosition((position:any) => {
+        if (position) {
+          const lat = position.coords.latitude;
+          const lng = position.coords.longitude;
+          this.center ={lat:lat,lng:lng}
+          this.myposition = this.center
+          this.zoom = 15
+        }
+      },
+        (error: any) => console.log(error));
+    } else {
+      alert("Geolocation is not supported by this browser.");
+    }
   }
  
   
