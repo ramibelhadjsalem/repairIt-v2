@@ -1,13 +1,13 @@
 .adresse {
   .title {
     text-align: center;
-
+    font-family: var(--font-montaserra);
     h4 {
       font-size: clamp(35px, 4vw, 60px);
-      color: #0C438C;
+      color: var(--color-blue);
     }
     p{
-      color: #999;
+      color: var(--color-light-grey);
     }
   }
   .container-map{

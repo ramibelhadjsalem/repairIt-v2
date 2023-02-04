@@ -7,47 +7,58 @@
             </div>
             <div class="menu">
                 <ul>
-                    <li class="tab-info position-relative">
-                        <a routerLink="/reparation" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}"  > 
+                    <li class="tab-info ">
+                        <a routerLink="/reparation" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
                             <div class="icon" [ngClass]="form.get('categorie')?.valid ? 'valid':''">
-                                <i class="bi bi-check-lg" ></i>
+                                <i class="bi bi-check-lg"></i>
                                 <div class="bi bi-uncheked"></div>
                             </div>
-                            <div class="tab-title">Device details</div>
-                            <div class="tab-description">Stp choisir le tupe de votre appraille</div>
+                            <div class="tab-dis">
+                                <div class="tab-title">Device details</div>
+                                <div class="tab-description">Stp choisir le tupe de votre appraille</div>
+                            </div>
                         </a>
                     </li>
-                    <li class="tab-info position-relative">
-                        <a routerLink="/reparation/discription" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" [class.disabled]="discriptionDisabled()">
+                    <li class="tab-info ">
+                        <a routerLink="/reparation/discription" routerLinkActive="active"
+                            [routerLinkActiveOptions]="{exact: true}" [class.disabled]="discriptionDisabled()">
                             <div class="icon" [ngClass]="form.get('discription')?.valid ? 'valid':''">
                                 <i class="bi bi-check-lg"></i>
                                 <div class="bi bi-uncheked"></div>
                             </div>
-                            <div class="tab-title">Décrire votre panne</div>
-                            <div class="tab-description">decriver le panne de votre apparaiel</div>
+                            <div class="tab-dis">
+                                <div class="tab-title">Décrire votre panne</div>
+                                <div class="tab-description">decriver le panne de votre apparaiel</div>
+                            </div>
                         </a>
                     </li>
-                    <li class="tab-info position-relative">
-                        <a routerLink="/reparation/address" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" [class.disabled]="addressDisabled()">
+                    <li class="tab-info ">
+                        <a routerLink="/reparation/address" routerLinkActive="active"
+                            [routerLinkActiveOptions]="{exact: true}" [class.disabled]="addressDisabled()">
                             <div class="icon" [ngClass]="address.valid ? 'valid':''">
-                                <i class="bi bi-check-lg" ></i>
+                                <i class="bi bi-check-lg"></i>
                                 <div class="bi bi-uncheked"></div>
                             </div>
-                            <div class="tab-title">Votre addresse</div>
-                            <div class="tab-description">choisir votre addres actuelle</div>
+                            <div class="tab-dis">
+                                <div class="tab-title">Votre addresse</div>
+                                <div class="tab-description">choisir votre addres actuelle</div>
+                            </div>
                         </a>
                     </li>
-                    <li class="tab-info position-relative">
-                        <a routerLink="/reparation/livraison" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" [class.disabled]="livraisonDisabled()">
-                            <div class="icon "[ngClass]="form.get('livraison')?.valid ? 'valid':''">
-                                <i class="bi bi-check-lg" ></i>
+                    <li class="tab-info ">
+                        <a routerLink="/reparation/livraison" routerLinkActive="active"
+                            [routerLinkActiveOptions]="{exact: true}" [class.disabled]="livraisonDisabled()">
+                            <div class="icon " [ngClass]="form.get('livraison')?.valid ? 'valid':''">
+                                <i class="bi bi-check-lg"></i>
                                 <div class="bi bi-uncheked"></div>
                             </div>
-                            <div class="tab-title">Livraison details</div>
-                            <div class="tab-description">Stp choisir le type livraison</div>
+                            <div class="tab-dis">
+                                <div class="tab-title">Livraison details</div>
+                                <div class="tab-description">Stp choisir le type livraison</div>
+                            </div>
                         </a>
                     </li>
-                    
+
                 </ul>
 
             </div>
@@ -57,7 +68,7 @@
         </div>
         <div class="col-12 col-lg right-side p-0">
             <app-menu-md></app-menu-md>
-            <main role="main" class="container-fluid px-0 position-relative w-100">
+            <main role="main" class="container-fluid px-0  w-100">
                 <router-outlet></router-outlet>
             </main>
             <!-- <app-indecator></app-indecator> -->

@@ -1,7 +1,7 @@
 <div class="container-fluid adresse my-5 ">
 
     <div class="title mb-5">
-        <h4 class="text-uppercase"> choisir votre addresse</h4>
+        <h4 class=""> Choisir votre addresse</h4>
         <p>Double click pour coucher votre addresse</p>
     </div>
     <div class="container-map">
@@ -12,7 +12,7 @@
             [zoom]="zoom" 
             (mapClick)="putMarker($event)"
            >
-            <map-marker *ngIf="myposition"
+           <map-marker *ngIf="myposition"
               [position]="myposition"
               [options]="markerOptions"></map-marker>
         </google-map>
