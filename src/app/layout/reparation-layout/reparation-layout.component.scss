@@ -3,7 +3,7 @@
 
     .left-side {
         position: fixed;
-        height: 100vh;
+        max-height: 100vh;
         background-color: var(--color-light-orange);
         padding-top: 30px;
         position: relative;
@@ -157,12 +157,10 @@
 }
 
 main {
-    min-height: 300px;
-    padding-bottom: 100px;
+    padding-bottom: 70px;
+    height: 100vh;
 }
 
 .right-side {
-    max-height: 100vh;
     position: relative;
-    overflow-y: scroll;
 }

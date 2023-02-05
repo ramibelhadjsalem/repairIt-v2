@@ -91,3 +91,7 @@
         width: calc( 100vw * 0.75 );
     }
 }
+
+.container-fluid{
+    height: calc(90vh - 100px);
+}

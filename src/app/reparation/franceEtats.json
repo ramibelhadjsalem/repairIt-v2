@@ -1,0 +1,156 @@
+[
+    {
+        "state": "Alsace",
+        "position": {
+            "latitude": 48.5839,
+            "longitude": 7.7429
+        }
+    },
+    {
+        "state": "Aquitaine",
+        "position": {
+            "latitude": 44.8379,
+            "longitude": -0.5806
+        }
+    },
+    {
+        "state": "Auvergne",
+        "position": {
+            "latitude": 45.7886,
+            "longitude": 3.1667
+        }
+    },
+    {
+        "state": "Basse-Normandie",
+        "position": {
+            "latitude": 49.4431,
+            "longitude": -0.1120
+        }
+    },
+    {
+        "state": "Bourgogne",
+        "position": {
+            "latitude": 47.3173,
+            "longitude": 4.9236
+        }
+    },
+    {
+        "state": "Bretagne",
+        "position": {
+            "latitude": 48.1147,
+            "longitude": -3.4360
+        }
+    },
+    {
+        "state": "Centre",
+        "position": {
+            "latitude": 47.4205,
+            "longitude": 1.5237
+        }
+    },
+    {
+        "state": "Champagne-Ardenne",
+        "position": {
+            "latitude": 48.1761,
+            "longitude": 4.7167
+        }
+    },
+    {
+        "state": "Corse",
+        "position": {
+            "latitude": 42.1083,
+            "longitude": 9.1333
+        }
+    },
+    {
+        "state": "Franche-Comté",
+        "position": {
+            "latitude": 47.2406,
+            "longitude": 6.0478
+        }
+    },
+    {
+        "state": "Haute-Normandie",
+        "position": {
+            "latitude": 49.4958,
+            "longitude": 1.1224
+        }
+    },
+    {
+        "state": "Île-de-France",
+        "position": {
+            "latitude": 48.8566,
+            "longitude": 2.3522
+        }
+    },
+    {
+        "state": "Languedoc-Roussillon",
+        "position": {
+            "latitude": 43.5626,
+            "longitude": 3.8767
+        }
+    },
+    {
+        "state": "Limousin",
+        "position": {
+            "latitude": 45.8435,
+            "longitude": 1.2611
+        }
+    },
+    {
+        "state": "Lorraine",
+        "position": {
+            "latitude": 48.6871,
+            "longitude": 6.1844
+        }
+    },
+    {
+        "state": "Midi-Pyrénées",
+        "position" :{
+            "latitude": 43.6107,
+            "longitude": 1.4436
+        }
+    },
+    {
+        "state": "Nord-Pas-de-Calais",
+        "position": {
+            "latitude": 50.6942,
+            "longitude": 2.8442
+        }
+    },
+    {
+        "state": "Pays de la Loire",
+        "position": {
+            "latitude": 47.2184,
+            "longitude": -0.5536
+        }
+    },
+    {
+        "state": "Picardie",
+        "position": {
+            "latitude": 49.9808,
+            "longitude": 2.3158
+        }
+    },
+    {
+        "state": "Poitou-Charentes",
+        "position": {
+            "latitude": 46.5875,
+            "longitude": -0.3472
+        }
+    },
+    {
+        "state": "Provence-Alpes-Côte d'Azur",
+        "position": {
+            "latitude": 43.9196,
+            "longitude": 5.5167
+        }
+    },
+    {
+        "state": "Rhône-Alpes",
+        "position": {
+            "latitude": 45.7640,
+            "longitude": 4.8357
+        }
+    }
+]

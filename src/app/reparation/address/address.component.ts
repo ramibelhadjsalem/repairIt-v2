@@ -30,6 +30,11 @@ export class AddressComponent implements OnInit{
   }
   initform(){
     this.form = this.formService.form.get('address') as FormGroup
+    // if(this.form.value){
+    //   this.myposition = this.form.value
+    //   this.center = this.form.value
+    //   this.zoom = 13
+    // }
   }
 
   putMarker(event : google.maps.MapMouseEvent){
@@ -40,18 +45,16 @@ export class AddressComponent implements OnInit{
     } 
   }
   getLocation() {
-    console.log(navigator);
+    if(this.form.valid) return;
     
-    if (navigator.geolocation) {
-      
-      
+    if ( navigator.geolocation) {
       navigator.geolocation.getCurrentPosition((position:any) => {
         if (position) {
           const lat = position.coords.latitude;
           const lng = position.coords.longitude;
           this.center ={lat:lat,lng:lng}
           this.myposition = this.center
-          this.zoom = 15
+          this.zoom = 13
           this.form.setValue(this.myposition)
         }
       },
