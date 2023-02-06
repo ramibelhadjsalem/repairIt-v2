@@ -11,6 +11,7 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 
+
 @NgModule({
   declarations: [
     CarouselHomeComponent,
@@ -27,6 +28,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     NgbCarouselModule,
     ReactiveFormsModule,
     FormsModule,
+    
+
   ],
   exports: [
     CarouselHomeComponent,
@@ -34,7 +37,6 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     CarouselStepComponent,
     CartReparateurComponent,
     BestRepairersComponent,
-
   ],
 })
 export class SharedModule { }

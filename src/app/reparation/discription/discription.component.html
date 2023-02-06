@@ -1,8 +1,8 @@
 <div class="container-fluid pannedescription d-flex flex-column align-items-center pt-lg-5">
     <div class="mb-4">
         <div class="discription-header text-center ">
-            <h4 class="title mb-3 mx-md-3">Décrire votre panne</h4>
-            <p class="text px-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, eligendi?</p>
+            <h4 class="title mb-3 mx-md-3">{{"reparation.panne.title" |translate}}</h4>
+            <p class="text px-2">{{"reparation.panne.subtitle" |translate}}</p>
         </div>
     </div>
     <form  [formGroup]="form" class="row w-100 justify-content-center px-3 mt-lg-5 ">
@@ -12,11 +12,11 @@
             class="disription "
             rows="1"
             cols="0"
-            placeholder="Describe your panne  here..."
+            placeholder='{{"reparation.panne.textarea" |translate}}'
         ></textarea>
         
     </form>
 </div>
 <div class="btn-navigation btn-next">
-    <button [routerLink]="['../address']" [disabled]="form.get('discription')?.invalid" >Suivant</button>
+    <button [routerLink]="['../address']" [disabled]="form.get('discription')?.invalid" >{{"next" |translate}}</button>
 </div>

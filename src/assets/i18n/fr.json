@@ -1,0 +1,36 @@
+{
+    "reparation":{
+        "sidebar":{
+            "title":"Réparation",
+            "apptype":"Type de l'apparielle",
+            "panne":"Panne",
+            "address":"Addresse",
+            "service":"Type de service"
+        },
+        "apptype":{
+            "title":"Selectionner le type de l'appareille",
+            "subtitle":"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quae, ducimus!"
+        },
+        "panne":{
+            "title":"Décrire votre panne",
+            "subtitle":"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quae, ducimus!",
+            "textarea":"Décrire votre panne ici"
+        },
+        "address":{
+            "title":"Choisir votre addresse",
+            "subtitle":"Double click pour coucher votre addresse",
+            "textarea":"Entrer votre addresse"
+        },
+        "service":{
+            "title":"Choisir le type de service",
+            "subtitle":"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quae",
+            "option":"Choisir entre",
+            "option1":"Sur place",
+            "option2":"a domicile",
+            "option3":"Par post"
+        }
+        
+    } ,
+    "next":"Suivant",
+    "finish":"finir"
+}

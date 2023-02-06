@@ -1,8 +1,8 @@
 <div class="container-fluid adresse pt-lg-3">
 
     <div class="title mb-2">
-        <h4 class=""> Choisir votre addresse</h4>
-        <p>Double click pour coucher votre addresse</p>
+        <h4 class="">{{"reparation.address.title" |translate}} </h4>
+        <p>{{"reparation.address.subtitle" |translate}}</p>
     </div>
     <div class="text-center pb-3 mt-lg-5">
         <app-auto-complate-adress (setAddress)="getAddress($event)" adressType="geocode"></app-auto-complate-adress>

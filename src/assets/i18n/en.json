@@ -1,0 +1,35 @@
+{
+    "reparation": {
+        "sidebar": {
+            "title": "Repair",
+            "apptype": "Device Type",
+            "panne": "Breakdown",
+            "address": "Address",
+            "service": "Service Type"
+        },
+        "apptype": {
+            "title": "Select the type of device",
+            "subtitle": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quae, ducimus!"
+        },
+        "panne": {
+            "title": "Describe your failure",
+            "subtitle": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quae, ducimus!",
+            "textarea": "Describe your failure here"
+        },
+        "address": {
+            "title": "Choose Your Address",
+            "subtitle": "Double click to enter your address",
+            "textarea": "Enter Your Address"
+        },
+        "service": {
+            "title": "Choose the Service Type",
+            "subtitle": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quae",
+            "option": "Choose from",
+            "option1": "On site",
+            "option2": "At home",
+            "option3": "By mail"
+        }
+    },
+    "next": "Next",
+    "finish": "finish"
+}

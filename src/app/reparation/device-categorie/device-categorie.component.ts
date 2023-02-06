@@ -18,6 +18,9 @@ export class DeviceCategorieComponent implements OnInit {
 
   ngOnInit(): void {
     this.initForm()
+    console.log(navigator.language);
+   
+    
   }
   genrateIcon(icon: string): SafeHtml {
     return this.sanitizer.bypassSecurityTrustHtml(icon);

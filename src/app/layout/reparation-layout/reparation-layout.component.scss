@@ -1,5 +1,5 @@
 .row {
-    user-select: none;
+    // user-select: none;
 
     .left-side {
         position: fixed;
@@ -13,6 +13,7 @@
             color: var(--color-wight);
             padding: 10px;
             font-weight: 600;
+            font-family: var( --font-montaserra);
 
             .bi {
                 font-size: 30px;
@@ -27,7 +28,7 @@
                 line-height: 20px;
 
                 &:hover {
-                    background: var(--color-orange) 0 0 no-repeat padding-box;
+                    background: var(--color-light-orange-background) 0 0 no-repeat padding-box;
                 }
             }
         }
@@ -64,7 +65,7 @@
                     &::after {
                         content: "";
                         position: absolute;
-                        top: 35px;
+                        top: 28px;
                         left: 11px;
                         height: calc(100% - 6px);
                         width: 2px;
@@ -83,10 +84,12 @@
                         text-decoration: none;
                         display: flex;
                         flex-wrap: nowrap;
+                        align-items: center;
                         .tab-dis{
                             display: flex;
                             flex-direction: column;
                             margin-left: 15px;
+                            font-family: var( --font-montaserra);
                         }
                         .icon {
                             height: 25px;
@@ -94,12 +97,13 @@
                             border-radius: 50%;
                             box-shadow: 0 3px 6px #00000029;
                             border: 3px solid var(--color-wight);
-                            margin-top: 10px;
+                            // margin-top: 10px;
                             font-size: 20px;
                             line-height: 15px;
                             color: var(--color-wight);
                             display: flex;
                             align-items: center;
+                          
                             .bi-uncheked {
                                 width: 7px;
                                 height: 7px;

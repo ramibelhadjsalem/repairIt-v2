@@ -14,6 +14,9 @@ import { SharedModule } from '../shared/shared.module';
 import { RouterModule } from '@angular/router';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { FormsModule } from '@angular/forms';
+import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 
 
 
@@ -35,7 +38,16 @@ import { FormsModule } from '@angular/forms';
     SharedModule,
     RouterModule,
     NgbModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule,
+    TranslateModule.forRoot({
+      defaultLanguage:localStorage.getItem("lang")|| "fr",
+      loader: {
+        provide: TranslateLoader,
+        useFactory: httpTranslateLoader,
+        deps: [HttpClient],
+      },
+    }),
   ],
   exports: [
     HeaderComponent,
@@ -45,3 +57,8 @@ import { FormsModule } from '@angular/forms';
   ]
 })
 export class LayoutModule { }
+
+
+export function httpTranslateLoader(http:HttpClient){
+  return new TranslateHttpLoader(http);
+}
